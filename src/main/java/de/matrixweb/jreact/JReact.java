@@ -132,6 +132,8 @@ public class JReact {
   }
 
   /**
+   * Same as renderToString(), but strip away React-specific extra attributes
+
    * @param mainComponentPath
    * @param props
    *          The props to render with
@@ -145,6 +147,8 @@ public class JReact {
   }
 
   /**
+   * Render a ReactElement to its initial HTML
+   * 
    * @param mainComponentPath
    * @param props
    *          The props to render with
