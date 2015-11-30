@@ -29,6 +29,8 @@ function lookup(path_list) {
               return resolvedPath
             else if(isFile(resolvedPath + '.js'))
               return resolvedPath + ".js";
+          } else if (isFile(path + '/index.js')) {
+            return path + '/index.js';
           }
         } else if (isFile(path + '/index.js')) {
           return path + '/index.js';
