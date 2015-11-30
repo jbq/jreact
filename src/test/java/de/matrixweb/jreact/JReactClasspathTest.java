@@ -86,7 +86,7 @@ public class JReactClasspathTest {
   private void staticMarkup(final JReact react) throws IOException {
     final Map<String, Object> props = new HashMap<>();
     props.put("text", "Hello World!");
-    final String result = react.renderComponentToStaticMarkup("./test.js", props);
+    final String result = react.renderToStaticMarkup("./test.js", props);
 
     assertThat(result, is("<div>Hello World!</div>"));
   }

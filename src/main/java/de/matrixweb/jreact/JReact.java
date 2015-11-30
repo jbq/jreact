@@ -141,7 +141,7 @@ public class JReact {
    * @throws IOException
    *           Thrown if the json conversion of the props fails
    */
-  public String renderComponentToStaticMarkup(final String mainComponentPath, final Map<String, Object> props)
+  public String renderToStaticMarkup(final String mainComponentPath, final Map<String, Object> props)
       throws IOException {
     return render(mainComponentPath, props, true);
   }
